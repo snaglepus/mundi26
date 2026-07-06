@@ -28,7 +28,7 @@ function DayPubs({ names }) {
           if (!p) return null
           return (
             <span className="day-pub" key={n}>
-              <b>{p.name}</b>, {p.town}
+              <span><b>{p.name}</b>, {p.town}</span>
               {p.url && <a href={p.url} target="_blank" rel="noreferrer">site</a>}
               <a href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${p.name} ${p.town}`)}`} target="_blank" rel="noreferrer">map</a>
             </span>
