@@ -6,7 +6,8 @@ Trip website for the August 2026 road trip: Sydney → Mungo NP → Mundi Mundi 
 
 ## Features
 
-- Full day-by-day itinerary with the fixed spine and every open decision
+- Full day-by-day itinerary with the fixed spine and every open decision; each day is self-contained with its own expandable route map, pubs (site + map links), day soundtrack links and a tap-to-view inspiration gallery
+- Days 2–4 are one combined block with the full festival lineup inline
 - Interactive Leaflet map: 58 pins (stays, pubs, fuel, sights, stargazing), main route + 4 return options, per-pin Google Maps deep links
 - Return-route vote with comparison table (localStorage)
 - Pub passport: stamp all 17 pubs as the trip unfolds (localStorage)

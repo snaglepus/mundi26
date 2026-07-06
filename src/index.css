@@ -189,7 +189,8 @@ h2.title em { font-style: italic; color: var(--gold); }
   transition: all 0.2s; background: #fff;
 }
 .day-chips a:hover { border-color: var(--dust); color: var(--dust); }
-.day-block { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; padding: 64px 0; border-top: 1px solid var(--line-dark); scroll-margin-top: 90px; }
+.day-block { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: start; padding: 64px 0; border-top: 1px solid var(--line-dark); scroll-margin-top: 90px; }
+.day-block:not(.wide) .day-media { position: sticky; top: 96px; }
 .day-block:first-of-type { border-top: none; padding-top: 12px; }
 .day-block.flip .day-media { order: 2; }
 .day-media { position: relative; }
@@ -223,10 +224,80 @@ h2.title em { font-style: italic; color: var(--gold); }
 .opt-row .name { flex: 0 0 130px; font-weight: 700; color: var(--ink); }
 .opt-row .pref-tag { background: var(--dust); color: #fff; font-size: 0.58rem; letter-spacing: 0.12em; padding: 2px 8px; text-transform: uppercase; margin-left: 6px; }
 .opt-row p { color: var(--ink-soft); }
+.stops-title { font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--dust); font-weight: 800; margin: 20px 0 6px; }
+.day-block.wide { grid-template-columns: 1fr; gap: 30px; }
+.day-block.wide .day-media img { aspect-ratio: 21/9; }
 @media (max-width: 860px) {
   .day-block { grid-template-columns: 1fr; gap: 26px; padding: 44px 0; }
   .day-block.flip .day-media { order: 0; }
   .stops .t { flex-basis: 74px; }
+}
+
+/* per-day pubs, tunes, route map, mini gallery */
+.day-pub-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.day-pub {
+  background: #fff; border: 1px solid var(--line-dark); padding: 7px 12px;
+  font-size: 0.8rem; color: var(--ink-soft); display: inline-flex; gap: 9px; align-items: baseline;
+}
+.day-pub b { color: var(--ink); font-weight: 650; }
+.day-pub a { font-size: 0.68rem; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 700; color: var(--dust); border-bottom: 1px solid rgba(193, 68, 14, 0.35); }
+.day-tunes { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
+.day-tune {
+  border: 1px solid var(--dust); color: var(--dust); padding: 8px 16px;
+  font-size: 0.74rem; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 700;
+  border-radius: 999px; transition: all 0.2s;
+}
+.day-tune:hover { background: var(--dust); color: #fff; }
+.daymap { margin-top: 20px; border: 1px solid var(--line-dark); background: #fff; }
+.daymap summary {
+  cursor: pointer; list-style: none; padding: 13px 16px; font-size: 0.78rem;
+  letter-spacing: 0.14em; text-transform: uppercase; font-weight: 800; color: var(--dust);
+}
+.daymap summary::-webkit-details-marker { display: none; }
+.daymap summary::after { content: ' ▾'; }
+.daymap[open] summary::after { content: ' ▴'; }
+.daymap-canvas { height: 340px; width: 100%; }
+.daymap-gmaps { display: block; padding: 11px 16px; font-size: 0.78rem; font-weight: 700; border-top: 1px dashed var(--line-dark); }
+.pin.pin-sm { width: 20px; height: 20px; }
+.pin.pin-sm span { font-size: 8px; color: #fff; }
+.mini-gal { display: grid; grid-template-columns: repeat(auto-fill, minmax(96px, 1fr)); gap: 6px; }
+.mini-gal button { border: none; padding: 0; background: none; cursor: pointer; overflow: hidden; }
+.mini-gal img { width: 100%; aspect-ratio: 1; object-fit: cover; display: block; transition: transform 0.3s, filter 0.3s; }
+.mini-gal button:hover img { transform: scale(1.08); filter: brightness(1.1); }
+
+/* festival block inside Days 2-4 */
+.fest-inline { margin: 26px 0 6px; background: var(--night); padding: 34px 28px; scroll-margin-top: 90px; }
+.fest-inline-head { text-align: center; margin-bottom: 18px; }
+.fest-inline-head p { color: var(--text-dim); font-size: 0.85rem; margin-top: 10px; }
+.fest-inline .fest-fact b { color: var(--gold); }
+.fest-inline .fest-fact span { color: var(--text-warm); }
+.fest-inline .lineup-pills { margin-bottom: 26px; }
+.fest-inline .fest-facts { margin-bottom: 26px; }
+
+/* lightbox */
+.lb {
+  position: fixed; inset: 0; z-index: 2000; background: rgba(8, 6, 4, 0.94);
+  display: flex; align-items: center; justify-content: center; padding: 30px;
+}
+.lb figure { max-width: min(1200px, 92vw); max-height: 88vh; display: flex; flex-direction: column; }
+.lb img { max-width: 100%; max-height: 80vh; object-fit: contain; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6); }
+.lb figcaption { color: var(--sand); font-size: 0.9rem; padding: 14px 4px; display: flex; justify-content: space-between; gap: 16px; }
+.lb figcaption span { color: var(--text-dim); font-size: 0.78rem; }
+.lb-x, .lb-nav {
+  position: fixed; background: none; border: 1px solid var(--line-gold); color: var(--gold-2);
+  width: 46px; height: 46px; font-size: 1.3rem; display: grid; place-items: center; z-index: 2001;
+  border-radius: 50%; transition: all 0.2s;
+}
+.lb-x:hover, .lb-nav:hover { background: var(--gold); color: var(--night); }
+.lb-x { top: 22px; right: 22px; }
+.lb-nav { top: 50%; transform: translateY(-50%); font-size: 2rem; }
+.lb-prev { left: 18px; }
+.lb-next { right: 18px; }
+@media (max-width: 700px) {
+  .lb { padding: 12px; }
+  .lb-nav { top: auto; bottom: 18px; transform: none; }
+  .lb-prev { left: calc(50% - 60px); }
+  .lb-next { right: calc(50% - 60px); }
 }
 
 /* ---------------------------------------------------------------- festival */
@@ -323,7 +394,8 @@ h2.title em { font-style: italic; color: var(--gold); }
 
 /* ---------------------------------------------------------------- playlists */
 .pl-layout { display: grid; grid-template-columns: 1fr; gap: 14px; }
-.pl-acc { background: var(--panel); border: 1px solid rgba(233, 168, 63, 0.12); }
+.pl-acc { background: var(--panel); border: 1px solid rgba(233, 168, 63, 0.12); scroll-margin-top: 80px; }
+.bash-pl { scroll-margin-top: 80px; }
 .pl-acc summary { list-style: none; display: flex; align-items: baseline; gap: 16px; padding: 20px 24px; cursor: pointer; flex-wrap: wrap; }
 .pl-acc summary::-webkit-details-marker { display: none; }
 .pl-num { font-family: var(--serif); color: transparent; -webkit-text-stroke: 1px var(--gold); font-size: 1.6rem; }

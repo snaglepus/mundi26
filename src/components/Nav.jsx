@@ -4,7 +4,7 @@ const LINKS = [
   ['#trip', 'Trip'],
   ['#crew', 'Crew'],
   ['#itinerary', 'Itinerary'],
-  ['#festival', 'The Bash'],
+  ['#day24', 'The Bash'],
   ['#map', 'Map'],
   ['#vote', 'Vote'],
   ['#pubs', 'Pubs'],

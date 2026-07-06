@@ -4,12 +4,12 @@ const img = (name) => `${import.meta.env.BASE_URL}images/${name}`
 export const meta = {
   title: 'Mundi Mundi Bash 2026',
   subtitle: "The Outback Lads' Trip",
-  tagline: 'Ten days. Three rigs. Eight blokes. Four thousand kilometres of outback NSW and SA - festival, opal mines, missile parks and the Murray River.',
+  tagline: 'Ten days. Three rigs. Nine blokes. Four thousand kilometres of outback NSW and SA - festival, opal mines, missile parks and the Murray River.',
   departISO: '2026-08-18T16:30:00+10:00',
   stats: [
     { value: '10', label: 'Days' },
     { value: '~4,000', label: 'Kilometres' },
-    { value: '8', label: 'Lads' },
+    { value: '9', label: 'Lads' },
     { value: '3', label: 'Rigs' },
     { value: '17', label: 'Pubs' },
     { value: '21+', label: 'Acts' },
@@ -18,20 +18,38 @@ export const meta = {
 
 export const quickCards = [
   { num: '01', title: 'The Route', text: 'Sydney to Coober Pedy the long way - Mungo, the festival plains, a rocket range - and four ways home under group vote.', href: '#itinerary' },
-  { num: '02', title: 'The Bash', text: 'Three days of music on the Mundi Mundi Plains. Teskey Brothers, John Butler, Jessica Mauboy and eighteen more.', href: '#festival' },
+  { num: '02', title: 'The Bash', text: 'Three days of music on the Mundi Mundi Plains. Teskey Brothers, John Butler, Jessica Mauboy and eighteen more.', href: '#day24' },
   { num: '03', title: 'The Map', text: 'Every stay, pub, fuel stop and lookout on one interactive map. Tap any pin to open it in Google Maps.', href: '#map' },
   { num: '04', title: 'The Vote', text: 'Murray Classic, Murray Heritage, Southern Gourmet or the Outback Express. Argue it out over a beer.', href: '#vote' },
 ]
 
 export const crew = [
   { rig: 'Camper Van 1', people: ['Rob James', 'Marcus James', 'Christian James', 'Dennis Hodges'], icon: '🚐' },
-  { rig: 'Camper Van 2', people: ['Kevin Forster', 'Keenan Forster'], icon: '🚐' },
+  { rig: 'Camper Van 2', people: ['Kevin Forster', 'Keenan Forster', 'Campbell Tilley'], icon: '🚐' },
   { rig: 'The Caravan', people: ['Barry Rallis', 'Marlon Rallis'], icon: '🏕️' },
 ]
 
-export const ticketFlag = '11 adult tickets and 4 vehicle passes are purchased; 8 going with 3 rigs. 3 spare tickets + 1 spare vehicle pass to sell or reallocate - resale terms at mundimundibash.com.au.'
+export const ticketFlag = '11 adult tickets and 4 vehicle passes are purchased; 9 going with 3 rigs. 2 spare tickets + 1 spare vehicle pass to sell or reallocate - resale terms at mundimundibash.com.au.'
+
+// ---------------------------------------------------------------- festival
+export const festival = {
+  name: 'Mundi Mundi Bash 2026',
+  dates: 'Thu 20 - Sat 22 August 2026',
+  location: 'Belmont Station, Mundi Mundi Plains - 35 km north of Broken Hill, 9 km north of Silverton',
+  url: 'https://mundimundibash.com.au',
+  headliners: ['The Teskey Brothers', 'John Butler', 'Jessica Mauboy', 'Boy & Bear', 'Jon Stevens', 'Baby Animals'],
+  lineup: ['The Whitlams', 'Tim Finn', 'Richard Clapton', 'Leo Sayer', 'Troy Cassar-Daley', 'Wendy Matthews', 'Chocolate Starfish', 'The Radiators', 'Shane Howard', 'Fanny Lumsden', '19-Twenty', 'Furnace and the Fundamentals', 'Hot Potato Band', 'Wes Carr', '50 Years of Fleetwood Mac'],
+  facts: [
+    { label: 'Camping', value: 'Included - early entry Mon 17 Aug, out by Mon 24 Aug' },
+    { label: 'Tickets', value: '✅ Purchased - 11 adults + 4 vehicle passes' },
+    { label: 'Set times', value: 'Drop on the Bash App - download before Sydney' },
+    { label: 'Nights', value: '0-3°C on the plains. Warm gear is not optional.' },
+  ],
+}
 
 // ---------------------------------------------------------------- itinerary
+// Each day carries everything needed on the road: stops, pubs, route map,
+// day soundtrack and a gallery for the morning hype.
 export const days = [
   {
     id: 'day0',
@@ -58,6 +76,29 @@ export const days = [
         { name: 'Hay (push)', detail: '~540 km · arrive ~10:30pm. Already in the outback, kitchens shut - eat en route. Waking up on the Hay Plain is the payoff.' },
       ],
     },
+    pubs: ['Surveyor General Inn', 'Sir George'],
+    playlists: ['day0'],
+    routeMap: {
+      gmaps: 'https://www.google.com/maps/dir/Brighton-Le-Sands+NSW/Berrima+NSW/Goulburn+NSW/Jugiong+NSW/Wagga+Wagga+NSW/Hay+NSW',
+      path: [[-33.962, 151.158], [-34.489, 150.339], [-34.75, 149.72], [-34.84, 148.91], [-34.83, 148.325], [-35.07, 148.11], [-35.115, 147.369], [-34.75, 146.55], [-34.508, 144.851]],
+      points: [
+        { name: 'Brighton-le-Sands', lat: -33.962, lon: 151.158 },
+        { name: 'Berrima (dinner)', lat: -34.489, lon: 150.339 },
+        { name: 'Goulburn (opt 1)', lat: -34.75, lon: 149.72 },
+        { name: 'Jugiong (opt 2)', lat: -34.83, lon: 148.325 },
+        { name: 'Wagga Wagga (preferred)', lat: -35.115, lon: 147.369 },
+        { name: 'Hay (opt 4)', lat: -34.508, lon: 144.851 },
+      ],
+    },
+    gallery: [
+      { key: 'berrima-village.jpg', caption: 'Berrima village' },
+      { key: 'surveyor-general.jpg', caption: 'Surveyor General Inn, 1835' },
+      { key: 'big-merino.jpg', caption: 'The Big Merino, Goulburn' },
+      { key: 'jugiong.jpg', caption: 'Jugiong on the Murrumbidgee' },
+      { key: 'gundagai-bridge.jpg', caption: 'Prince Alfred Bridge, Gundagai' },
+      { key: 'wagga-beach.jpg', caption: 'The Murrumbidgee at Wagga' },
+      { key: 'dog-tuckerbox.jpg', caption: 'Dog on the Tuckerbox' },
+    ],
   },
   {
     id: 'day1',
@@ -87,17 +128,42 @@ export const days = [
       { label: 'Mungo Main Campground', url: 'https://www.nationalparks.nsw.gov.au/camping-and-accommodation/campgrounds/main-campground' },
       { label: 'Mungo Lodge', url: 'https://mungolodge.com.au' },
     ],
+    pubs: ['Bidgee Hotel', 'Crown Hotel'],
+    playlists: ['day1'],
+    routeMap: {
+      gmaps: 'https://www.google.com/maps/dir/Wagga+Wagga+NSW/Hay+NSW/Balranald+NSW/Mungo+National+Park',
+      path: [[-35.115, 147.369], [-34.75, 146.55], [-34.508, 144.851], [-34.636, 143.562], [-34.1, 143.25], [-33.726, 143.066]],
+      points: [
+        { name: 'Wagga Wagga', lat: -35.115, lon: 147.369 },
+        { name: 'Hay (fuel + lunch)', lat: -34.508, lon: 144.851 },
+        { name: 'Balranald (last fuel + coverage)', lat: -34.636, lon: 143.562 },
+        { name: 'Mungo Visitor Centre', lat: -33.726, lon: 143.066 },
+      ],
+    },
+    gallery: [
+      { key: 'hay-plain.jpg', caption: 'The Hay Plain' },
+      { key: 'hay-town.jpg', caption: 'Lachlan Street, Hay' },
+      { key: 'shearing-shed.jpg', caption: 'Inside a shearing shed' },
+      { key: 'balranald.jpg', caption: 'Balranald, last stop before the gravel' },
+      { key: 'walls-of-china.jpg', caption: 'Walls of China' },
+      { key: 'mungo-lunette.jpg', caption: 'The Mungo lunette' },
+      { key: 'mungo-boardwalk.jpg', caption: 'Red Top boardwalk' },
+      { key: 'mungo-woolshed.jpg', caption: 'Mungo Woolshed, 1860s' },
+      { key: 'red-kangaroo.jpg', caption: 'The locals at dusk' },
+      { key: 'milky-way.jpeg', caption: 'What 10pm looks like out here' },
+    ],
   },
   {
-    id: 'day2',
-    date: 'Thu 20 Aug',
-    day: 'Day 2',
-    title: 'The Great Pub Crawl',
-    route: 'Mungo → Pooncarie → Menindee → Broken Hill → Silverton → Festival gates',
-    image: img('silverton-hotel.jpg'),
-    imageCaption: 'Silverton Hotel - population 35 people, 4 donkeys',
-    km: '~340 km',
-    summary: 'The best pub crawl in western NSW, ending with sunset over the Mundi Mundi Plains and the first acts of the Bash.',
+    id: 'day24',
+    date: 'Thu 20 – Sat 22 Aug',
+    day: 'Days 2–4',
+    title: 'The Bash',
+    route: 'Mungo → Pooncarie → Menindee → Broken Hill → Silverton → Belmont Station',
+    image: img('hero-mundi-mundi.jpg'),
+    imageCaption: 'The Mundi Mundi Plains',
+    km: '~340 km, then minimal',
+    summary: 'Thursday is the best pub crawl in western NSW, ending at the festival gates. Then two full days of music under a widescreen sky, with Broken Hill and Silverton side-quests for the restless.',
+    stopsTitle: 'Thursday: getting there is half the point',
     stops: [
       { time: '9am', name: 'Pooncarie Hotel', desc: 'Est. 1893, population 60, verandah on the Darling. Cold beer at 9am if you want it - it’s a pub, they don’t judge. FUEL: last bowser before Broken Hill.' },
       { time: '11am', name: "Maiden's Hotel, Menindee", desc: 'Reputedly the second-oldest continuously operating pub in NSW. Burke and Wills staged their 1860 expedition here. Then the Menindee Lakes: drowned red gums, thousands of pelicans, total silence.' },
@@ -105,18 +171,8 @@ export const days = [
       { time: '3:30pm', name: 'Silverton Hotel', desc: 'Real bullet holes, walls of memorabilia, donkeys that wander in for a drink. Mad Max 2 was filmed on these plains - the museum next door has two Interceptors. Two beers, not four; there’s driving left.' },
       { time: '5pm', name: 'Festival site', desc: '9 km north of Silverton. Set up camp before dark, cold beer, sunset over the plain. First acts Thursday evening.' },
     ],
-  },
-  {
-    id: 'day34',
-    date: 'Fri 21 – Sat 22 Aug',
-    day: 'Days 3–4',
-    title: 'The Bash',
-    route: 'Belmont Station, Mundi Mundi Plains',
-    image: img('hero-mundi-mundi.jpg'),
-    imageCaption: 'The Mundi Mundi Plains',
-    km: 'minimal',
-    summary: 'Two full days of music under a widescreen sky, with Broken Hill and Silverton side-quests for the restless.',
-    stops: [
+    beyondTitle: 'Beyond the music (pick per day; town is 35 km away)',
+    beyond: [
       { time: 'daily', name: 'Mundi Mundi Lookout', desc: 'The 360° sunset over the plain, 5 minutes from the site. Go at least once.' },
       { time: 'pick a day', name: 'Living Desert Sculptures', desc: '12 sandstone sculptures on a ridge that glow red at sunset - one of the best photo stops in outback NSW.' },
       { time: 'pick a day', name: 'Palace Hotel, Broken Hill', desc: 'The Priscilla pub - Botticelli’s Venus on the ceiling among floor-to-ceiling murals. A schooner here is non-negotiable.' },
@@ -124,11 +180,44 @@ export const days = [
       { time: 'pick a day', name: 'Line of Lode + Pro Hart + Big Picture', desc: 'The miners’ memorial on the slag heap is quietly devastating; the world’s largest acrylic-on-canvas is 100 m round.' },
       { time: 'book ahead', name: 'Outback Astronomy Sky Show', desc: '$72pp, reclining chairs, binoculars, guided tour of the southern sky. Book before leaving Sydney.' },
     ],
+    festival: true,
     notes: [
       'Toilets, showers, food vendors and bars on site. BYO permitted in camp.',
-      'Days 12–18°C, nights 0–3°C - warm gear is not optional. Dust masks or buffs for windy days. Water at 5L/person/day.',
-      'Moon sets 10–11pm each night: late sets under a properly dark sky, Milky Way over the main stage.',
+      'Days 12-18°C, nights 0-3°C - warm gear is not optional. Dust masks or buffs for windy days. Water at 5L/person/day.',
+      'Moon sets 10-11pm each night: late sets under a properly dark sky, Milky Way over the main stage.',
       'Set times drop on the Bash App - download it before leaving Sydney.',
+    ],
+    pubs: ['Pooncarie Hotel', "Maiden's Hotel", 'Palace Hotel', 'Silverton Hotel'],
+    playlists: ['day2', 'day34'],
+    bashPlaylists: true,
+    routeMap: {
+      gmaps: 'https://www.google.com/maps/dir/Mungo+National+Park/Pooncarie+NSW/Menindee+NSW/Broken+Hill+NSW/Silverton+NSW',
+      path: [[-33.726, 143.066], [-33.387, 142.569], [-32.392, 142.419], [-31.956, 141.468], [-31.885, 141.226], [-31.617, 141.45]],
+      points: [
+        { name: 'Mungo NP', lat: -33.726, lon: 143.066 },
+        { name: 'Pooncarie (fuel)', lat: -33.387, lon: 142.569 },
+        { name: 'Menindee', lat: -32.392, lon: 142.419 },
+        { name: 'Broken Hill (stock up)', lat: -31.956, lon: 141.468 },
+        { name: 'Silverton', lat: -31.885, lon: 141.226 },
+        { name: 'Festival site, Belmont Station', lat: -31.617, lon: 141.45 },
+      ],
+    },
+    gallery: [
+      { key: 'darling-river.jpg', caption: 'The Darling at Pooncarie' },
+      { key: 'menindee-lakes.jpg', caption: 'Menindee Lakes from above' },
+      { key: 'menindee-trees.jpg', caption: 'Drowned red gums, Menindee' },
+      { key: 'pelicans.jpg', caption: 'The pelican welcome committee' },
+      { key: 'palace-hotel.jpg', caption: 'Palace Hotel, Broken Hill' },
+      { key: 'broken-hill-town.jpg', caption: 'Argent Street, Broken Hill' },
+      { key: 'bells-milk-bar.jpg', caption: 'Bells Milk Bar, since 1892' },
+      { key: 'line-of-lode.jpg', caption: 'Line of Lode over the city' },
+      { key: 'living-desert.jpg', caption: 'Living Desert Sculptures' },
+      { key: 'silverton-hotel.jpg', caption: 'Silverton Hotel' },
+      { key: 'silverton-town.jpg', caption: 'Silverton' },
+      { key: 'mad-max.jpg', caption: 'Mad Max 2 Museum' },
+      { key: 'silverton-donkey.jpg', caption: 'A regular, apparently' },
+      { key: 'mundi-lookout.jpg', caption: 'Mundi Mundi Lookout' },
+      { key: 'hero-mundi-mundi.jpg', caption: 'The plains' },
     ],
   },
   {
@@ -147,9 +236,31 @@ export const days = [
       { time: '11am SA', name: 'Peterborough', desc: 'Lunch in a genuine 1890s railway-town pub (Transcontinental or Royal). Steam Town museum for the rail nerds.' },
       { time: '+175 km', name: 'Port Augusta', desc: 'Fuel, all vehicles. The Crossroads of Australia. Arid Lands Botanic Garden for a free leg stretch with Flinders views.' },
       { time: '3:30pm', name: 'Woomera', desc: 'Built 1947 for the Anglo-Australian rocket program, still an active defence area. Missile Park: open-air rows of Cold War rockets including a Blue Streak and a Black Arrow. Heritage Centre open to 5pm.' },
-      { time: 'night', name: 'Eldo Hotel', desc: 'The only pub in town - bar from 3pm, dinner 5–8:45pm. Stay at Woomera Traveller’s Village. The oval behind the Eldo is a fine dark-sky spot after moonset.' },
+      { time: 'night', name: 'Eldo Hotel', desc: 'The only pub in town - bar from 3pm, dinner 5-8:45pm. Stay at Woomera Traveller’s Village. The oval behind the Eldo is a fine dark-sky spot after moonset.' },
     ],
     notes: ['Do not wander beyond the heritage precinct - the rest is operational defence land.'],
+    pubs: ['Olary Hotel', 'Transcontinental Hotel', 'Eldo Hotel'],
+    playlists: ['day5'],
+    routeMap: {
+      gmaps: 'https://www.google.com/maps/dir/Broken+Hill+NSW/Olary+SA/Peterborough+SA/Port+Augusta+SA/Woomera+SA',
+      path: [[-31.617, 141.45], [-31.956, 141.468], [-32.08, 141.0], [-32.28, 140.33], [-32.58, 139.55], [-32.973, 138.84], [-32.492, 137.765], [-31.25, 136.81], [-31.199, 136.833]],
+      points: [
+        { name: 'Broken Hill (fuel)', lat: -31.956, lon: 141.468 },
+        { name: 'Olary Hotel', lat: -32.28, lon: 140.33 },
+        { name: 'Peterborough (lunch)', lat: -32.973, lon: 138.84 },
+        { name: 'Port Augusta (fuel)', lat: -32.492, lon: 137.765 },
+        { name: 'Woomera', lat: -31.199, lon: 136.833 },
+      ],
+    },
+    gallery: [
+      { key: 'barrier-highway.jpg', caption: 'The Barrier Highway' },
+      { key: 'olary-hotel.jpg', caption: 'Olary Hotel, population ~20' },
+      { key: 'peterborough-steam.jpg', caption: 'Steamtown, Peterborough' },
+      { key: 'flinders-orbit.jpg', caption: 'The Flinders Ranges from orbit' },
+      { key: 'wilpena.jpg', caption: 'Wilpena Pound on the horizon' },
+      { key: 'woomera-missiles.jpg', caption: 'Missile Park' },
+      { key: 'woomera-rocket.jpg', caption: 'Rocket-range hardware' },
+    ],
   },
   {
     id: 'day6',
@@ -177,6 +288,30 @@ export const days = [
       { label: 'Desert Cave Hotel', url: 'https://desertcave.com.au' },
       { label: 'Lookout Cave Motel', url: 'https://www.thelookoutcave.com' },
       { label: 'All Coober Pedy stays', url: 'https://www.cooberpedy.com/accommodation/' },
+    ],
+    pubs: ["Tom & Mary's Taverna", 'Opal Inn'],
+    playlists: ['day6'],
+    routeMap: {
+      gmaps: 'https://www.google.com/maps/dir/Woomera+SA/Glendambo+SA/Coober+Pedy+SA',
+      path: [[-31.199, 136.833], [-31.25, 136.81], [-30.97, 135.75], [-29.014, 134.754], [-29.0, 134.783]],
+      points: [
+        { name: 'Woomera', lat: -31.199, lon: 136.833 },
+        { name: 'Glendambo (FUEL, no exceptions)', lat: -30.97, lon: 135.75 },
+        { name: 'Coober Pedy', lat: -29.014, lon: 134.754 },
+        { name: 'The Breakaways (sunset)', lat: -29.0, lon: 134.783 },
+      ],
+    },
+    gallery: [
+      { key: 'glendambo.jpg', caption: 'Glendambo' },
+      { key: 'sturt-highway.jpg', caption: 'Crossing into SA' },
+      { key: 'coober-pedy.jpg', caption: 'Coober Pedy' },
+      { key: 'coober-pedy-underground.jpg', caption: 'An underground room' },
+      { key: 'umoona.jpg', caption: 'Umoona Opal Mine' },
+      { key: 'serbian-church.jpg', caption: 'The underground Serbian church' },
+      { key: 'big-winch.jpg', caption: 'The Big Winch' },
+      { key: 'opal.jpg', caption: 'The reason the town exists' },
+      { key: 'breakaways.jpg', caption: 'The Breakaways' },
+      { key: 'dingo-fence.jpg', caption: 'The Dingo Fence, 5,614 km' },
     ],
   },
 ]
@@ -240,7 +375,7 @@ export const returnOptions = [
 
 export const voteComparison = [
   { label: 'Day 7 driving', values: ['820 km', '820 km', '590 km', '670 km'] },
-  { label: 'Total Days 7–9', values: ['~1,930 km', '~1,900 km', '~1,710 km', '~1,600 km'] },
+  { label: 'Total Days 7-9', values: ['~1,930 km', '~1,900 km', '~1,710 km', '~1,600 km'] },
   { label: 'Home Thursday', values: ['~3pm', '~3:30pm', '~7pm', '~4pm'] },
   { label: 'Signature moment', values: ['Murray at golden hour', 'Bridge Hotel, Echuca', 'Barossa + The Exeter', 'Mt Panorama lap'] },
   { label: 'Booking risk', values: ['Low', 'Low', 'Stefano’s, Adelaide', 'Mario’s Palace'] },
@@ -268,27 +403,13 @@ export const pubs = [
   { name: 'Great Western Hotel', town: 'Cobar', day: 'Day 8 (opt 4)', why: 'Longest cast-iron verandah in the Southern Hemisphere.' },
 ]
 
-// ---------------------------------------------------------------- festival
-export const festival = {
-  name: 'Mundi Mundi Bash 2026',
-  dates: 'Thu 20 – Sat 22 August 2026',
-  location: 'Belmont Station, Mundi Mundi Plains - 35 km north of Broken Hill, 9 km north of Silverton',
-  url: 'https://mundimundibash.com.au',
-  headliners: ['The Teskey Brothers', 'John Butler', 'Jessica Mauboy', 'Boy & Bear', 'Jon Stevens', 'Baby Animals'],
-  lineup: ['The Whitlams', 'Tim Finn', 'Richard Clapton', 'Leo Sayer', 'Troy Cassar-Daley', 'Wendy Matthews', 'Chocolate Starfish', 'The Radiators', 'Shane Howard', 'Fanny Lumsden', '19-Twenty', 'Furnace and the Fundamentals', 'Hot Potato Band', 'Wes Carr', '50 Years of Fleetwood Mac'],
-  facts: [
-    { label: 'Camping', value: 'Included - early entry Mon 17 Aug, out by Mon 24 Aug' },
-    { label: 'Tickets', value: '✅ Purchased - 11 adults + 4 vehicle passes' },
-    { label: 'Set times', value: 'Drop on the Bash App - download before Sydney' },
-    { label: 'Nights', value: '0–3°C on the plains. Warm gear is not optional.' },
-  ],
-}
+export const pubByName = Object.fromEntries(pubs.map((p) => [p.name, p]))
 
 // ---------------------------------------------------------------- stars
 export const moonNights = [
   { date: '18 Aug', loc: 'Night 0 stop', moon: '~37% crescent, sets ~9pm', quality: 'Good after moonset', phase: '🌒' },
   { date: '19 Aug', loc: 'Mungo NP', moon: '~43% crescent, sets ~9:30pm', quality: 'BEST OF TRIP - fully dark from 10pm', phase: '🌓', prime: true },
-  { date: '20–22 Aug', loc: 'Mundi Mundi', moon: '48–60%, sets 10–11pm', quality: 'Very good late; Milky Way over the stage', phase: '🌓' },
+  { date: '20–22 Aug', loc: 'Mundi Mundi', moon: '48-60%, sets 10-11pm', quality: 'Very good late; Milky Way over the stage', phase: '🌓' },
   { date: '23 Aug', loc: 'Woomera', moon: '~70%, sets ~midnight', quality: 'Good after midnight', phase: '🌔' },
   { date: '24 Aug', loc: 'Coober Pedy', moon: '~80% gibbous', quality: 'Early evening at the Breakaways before moonrise', phase: '🌔' },
   { date: '25–27 Aug', loc: 'Return legs', moon: 'Approaching full', quality: 'Moonlit landscape instead', phase: '🌕' },
@@ -307,8 +428,8 @@ export const fuelPlan = [
 
 export const logistics = [
   { icon: '📡', title: 'Comms', items: ['Telstra only - and nothing at Mungo, patchy at Coober Pedy', 'Offline maps (Google + Hema) downloaded before Balranald', 'UHF: channel 40 road, channel 18 for the convoy', 'Emergency 000; RFDS covers the whole route'] },
-  { icon: '🌡️', title: 'Weather', items: ['Days 12–20°C, nights 0–5°C', 'Below zero possible at Mungo and the plains', 'Dust possible - masks or buffs', 'Sleeping bags rated to 0°C'] },
-  { icon: '🚐', title: 'The Caravan', items: ['Arumpo Rd fine when dry, 60 km/h', 'Inside Mungo: paved section only', 'All roads from Day 5 onward are sealed highway', 'Wet fallback: bitumen via Euston–Wentworth (+150 km)'] },
+  { icon: '🌡️', title: 'Weather', items: ['Days 12-20°C, nights 0-5°C', 'Below zero possible at Mungo and the plains', 'Dust possible - masks or buffs', 'Sleeping bags rated to 0°C'] },
+  { icon: '🚐', title: 'The Caravan', items: ['Arumpo Rd fine when dry, 60 km/h', 'Inside Mungo: paved section only', 'All roads from Day 5 onward are sealed highway', 'Wet fallback: bitumen via Euston-Wentworth (+150 km)'] },
   { icon: '⛽', title: 'Fuel Rules', items: ['Fill at every opportunity', '10L+ jerry can per vehicle', 'Glendambo: no exceptions', 'Coober Pedy: fill before the big Day 7 run'] },
 ]
 
@@ -322,9 +443,9 @@ export const packing = [
 ]
 
 export const bookings = [
-  { item: 'Festival tickets × 11', status: 'done', note: '3 spare to sell or reallocate', url: 'https://mundimundibash.com.au' },
+  { item: 'Festival tickets × 11', status: 'done', note: '2 spare to sell or reallocate', url: 'https://mundimundibash.com.au' },
   { item: '4 × Vehicle Entry Passes', status: 'done', note: '1 spare', url: 'https://mundimundibash.com.au' },
-  { item: 'Camper vans × 2', status: 'urgent', note: 'Book NOW for 18–27 Aug', url: 'https://www.britz.com/au' },
+  { item: 'Camper vans × 2', status: 'urgent', note: 'Book NOW for 18-27 Aug', url: 'https://www.britz.com/au' },
   { item: 'Mungo Main Camp sites', status: 'todo', note: 'Night of 19 Aug', url: 'https://www.nationalparks.nsw.gov.au/camping-and-accommodation/campgrounds/main-campground' },
   { item: 'Desert Cave Hotel (or Lookout Cave)', status: 'priority', note: 'Night of 24 Aug - August fills fast', url: 'https://desertcave.com.au' },
   { item: "Woomera Traveller's Village", status: 'todo', note: 'Night of 23 Aug - phone', url: 'https://www.facebook.com/eldohotel/' },
@@ -345,26 +466,51 @@ export const playlistMeta = [
   { key: 'day79', title: 'The Murray Run Home', vibe: 'Red dust behind, green river ahead, Sydney by Thursday. The comedown album.' },
 ]
 
+export const playlistTitle = Object.fromEntries(playlistMeta.map((p) => [p.key, p.title]))
+
 export const bashPlaylists = ['0x9sdCsFo3kbY7uiwmrbWA', '1ohBGNijqrNDhc4MvZqJDs', '4eHFHQLaLFAuTWHRSbk86n', '5lDOt8ph1h6SXExzNL9uXh', '6T2zNb7ebeb6bHF0zUHyg1']
 
 // ---------------------------------------------------------------- gallery
 export const gallery = [
+  { src: img('hero-mundi-mundi.jpg'), caption: 'The road to the plains' },
+  { src: img('walls-of-china.jpg'), caption: 'Walls of China, Mungo' },
   { src: img('mungo-lunette.jpg'), caption: 'Lake Mungo lunette' },
+  { src: img('hay-plain.jpg'), caption: 'Hay Plain sunset' },
   { src: img('menindee-lakes.jpg'), caption: 'Menindee Lakes' },
+  { src: img('menindee-trees.jpg'), caption: 'Drowned red gums, Menindee' },
+  { src: img('pelicans.jpg'), caption: 'Pelicans on the lakes' },
   { src: img('living-desert.jpg'), caption: 'Living Desert Sculptures' },
   { src: img('palace-hotel.jpg'), caption: 'Palace Hotel, Broken Hill' },
+  { src: img('silverton-hotel.jpg'), caption: 'Silverton Hotel' },
   { src: img('mad-max.jpg'), caption: 'Mad Max 2 Museum, Silverton' },
+  { src: img('mundi-lookout.jpg'), caption: 'Mundi Mundi Lookout' },
   { src: img('woomera-rocket.jpg'), caption: 'Woomera rocket range' },
+  { src: img('flinders-orbit.jpg'), caption: 'The Flinders Ranges from orbit' },
   { src: img('coober-pedy.jpg'), caption: 'Coober Pedy' },
   { src: img('serbian-church.jpg'), caption: 'Underground Serbian Orthodox church' },
   { src: img('coober-pedy-underground.jpg'), caption: 'Underground room, Coober Pedy' },
   { src: img('opal.jpg'), caption: 'Australian opal' },
-  { src: img('dingo-fence.jpg'), caption: 'The Dingo Fence - 5,614 km' },
   { src: img('breakaways.jpg'), caption: 'The Breakaways' },
-  { src: img('murray-echuca.jpg'), caption: 'Murray River at Echuca' },
-  { src: img('dog-tuckerbox.jpg'), caption: 'Dog on the Tuckerbox, Gundagai' },
-  { src: img('big-bogan.jpg'), caption: 'The Big Bogan, Nyngan' },
+  { src: img('dingo-fence.jpg'), caption: 'The Dingo Fence - 5,614 km' },
+  { src: img('red-kangaroo.jpg'), caption: 'Red kangaroos at dusk' },
   { src: img('emus.jpg'), caption: 'Locals' },
+  { src: img('silverton-donkey.jpg'), caption: 'A Silverton regular' },
+  { src: img('murray-renmark.jpg'), caption: 'The Murray at golden hour' },
+  { src: img('paddle-steamer.jpg'), caption: 'Paddle steamers at Echuca' },
+  { src: img('echuca-wharf2.jpg'), caption: 'Echuca wharf through the red gums' },
+  { src: img('murray-echuca.jpg'), caption: 'Murray River at Echuca' },
+  { src: img('swan-hill.jpg'), caption: 'PS Gem, Swan Hill' },
+  { src: img('seppeltsfield.jpg'), caption: 'Barossa Valley' },
+  { src: img('clare-valley.jpg'), caption: 'Clare Valley, Sevenhill' },
+  { src: img('adelaide-market.jpg'), caption: 'Adelaide Central Market' },
+  { src: img('burra.jpg'), caption: 'Burra Monster Mine' },
+  { src: img('wilcannia.jpg'), caption: 'Wilcannia sandstone' },
+  { src: img('cobar.jpg'), caption: 'Great Western Hotel, Cobar' },
+  { src: img('big-bogan.jpg'), caption: 'The Big Bogan, Nyngan' },
+  { src: img('mount-panorama.jpg'), caption: 'Mount Panorama, Bathurst' },
+  { src: img('blue-mountains.jpg'), caption: 'Blue Mountains, nearly home' },
+  { src: img('dog-tuckerbox.jpg'), caption: 'Dog on the Tuckerbox, Gundagai' },
+  { src: img('milky-way.jpeg'), caption: 'The other main stage' },
 ]
 
 // return-route polylines (lat, lon) for options missing from the KML

@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { playlistMeta, bashPlaylists } from '../data/content.js'
 import tracksData from '../data/spotifyTracks.json'
 
@@ -19,10 +19,21 @@ function Playlist({ pl, index }) {
   const tracks = tracksData[pl.key] || []
   const firstPlayable = tracks.find((t) => t.id)
   const [current, setCurrent] = useState(null)
+  const [open, setOpen] = useState(index === 0)
   const active = current || firstPlayable
 
+  // day sections link to #pl-<key>; open the accordion when targeted
+  useEffect(() => {
+    const check = () => {
+      if (window.location.hash === `#pl-${pl.key}`) setOpen(true)
+    }
+    check()
+    window.addEventListener('hashchange', check)
+    return () => window.removeEventListener('hashchange', check)
+  }, [pl.key])
+
   return (
-    <details className="pl-acc" open={index === 0}>
+    <details className="pl-acc" id={`pl-${pl.key}`} open={open} onToggle={(e) => setOpen(e.currentTarget.open)}>
       <summary>
         <span className="pl-num">{String(index + 1).padStart(2, '0')}</span>
         <h3>{pl.title}</h3>
@@ -68,7 +79,7 @@ export default function Playlists() {
         <div className="pl-layout">
           {playlistMeta.map((pl, i) => <Playlist pl={pl} index={i} key={pl.key} />)}
         </div>
-        <div className="bash-pl">
+        <div className="bash-pl" id="bash-tunes">
           <h3>Official Bash Travel Tunes</h3>
           <p className="lede">
             The festival’s own playlists of the 2026 lineup artists, straight from{' '}
