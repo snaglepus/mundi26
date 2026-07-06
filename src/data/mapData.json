@@ -1,0 +1,791 @@
+{
+ "routes": [
+  {
+   "name": "MAIN ROUTE \u2014 Days 0-6 (Sydney \u2192 Coober Pedy)",
+   "folder": "Routes",
+   "desc": "Brighton-le-Sands \u2192 Berrima \u2192 Goulburn \u2192 Jugiong \u2192 Wagga \u2192 Hay \u2192 Balranald \u2192 Mungo NP \u2192 Menindee \u2192 Broken Hill \u2192 Mundi Mundi \u2192 Cockburn \u2192 Olary \u2192 Peterborough \u2192 Port Augusta \u2192 Woomera \u2192 Coober Pedy",
+   "coords": [
+    [
+     -33.9617,
+     151.1583
+    ],
+    [
+     -34.4789,
+     150.3284
+    ],
+    [
+     -34.7537,
+     149.721
+    ],
+    [
+     -34.8324,
+     148.3124
+    ],
+    [
+     -35.1082,
+     147.3598
+    ],
+    [
+     -34.7468,
+     146.5547
+    ],
+    [
+     -34.514,
+     144.8429
+    ],
+    [
+     -34.6401,
+     143.558
+    ],
+    [
+     -33.7256,
+     143.0659
+    ],
+    [
+     -33.7256,
+     143.0659
+    ],
+    [
+     -34.6401,
+     143.558
+    ],
+    [
+     -33.0,
+     142.8
+    ],
+    [
+     -32.3936,
+     142.4166
+    ],
+    [
+     -31.9542,
+     141.4677
+    ],
+    [
+     -31.6167,
+     141.45
+    ],
+    [
+     -31.9542,
+     141.4677
+    ],
+    [
+     -32.0558,
+     141.0036
+    ],
+    [
+     -32.3167,
+     140.3167
+    ],
+    [
+     -32.5833,
+     139.55
+    ],
+    [
+     -32.9667,
+     138.8333
+    ],
+    [
+     -33.35,
+     138.2167
+    ],
+    [
+     -32.4936,
+     137.7779
+    ],
+    [
+     -31.1991,
+     136.8331
+    ],
+    [
+     -30.9667,
+     136.0
+    ],
+    [
+     -29.0135,
+     134.7544
+    ]
+   ]
+  },
+  {
+   "name": "RETURN Route A \u2014 Via Adelaide + Barossa + Murray (Days 7-9)",
+   "folder": "Routes",
+   "desc": "Coober Pedy \u2192 Port Augusta \u2192 Adelaide \u2192 Barossa Valley \u2192 Clare \u2192 Morgan \u2192 Renmark \u2192 Mildura \u2192 Balranald \u2192 Hay \u2192 Wagga \u2192 Sydney. Best for food, wine, Murray River.",
+   "coords": [
+    [
+     -29.0135,
+     134.7544
+    ],
+    [
+     -30.9667,
+     136.0
+    ],
+    [
+     -31.1991,
+     136.8331
+    ],
+    [
+     -32.4936,
+     137.7779
+    ],
+    [
+     -33.35,
+     138.2167
+    ],
+    [
+     -34.45,
+     138.55
+    ],
+    [
+     -34.9285,
+     138.6007
+    ],
+    [
+     -34.5252,
+     138.8951
+    ],
+    [
+     -33.8329,
+     138.6093
+    ],
+    [
+     -34.0333,
+     139.6667
+    ],
+    [
+     -34.1667,
+     140.7333
+    ],
+    [
+     -34.1849,
+     142.1634
+    ],
+    [
+     -34.6401,
+     143.558
+    ],
+    [
+     -34.514,
+     144.8429
+    ],
+    [
+     -34.7468,
+     146.5547
+    ],
+    [
+     -35.1082,
+     147.3598
+    ],
+    [
+     -35.17,
+     147.72
+    ],
+    [
+     -34.84,
+     148.9
+    ],
+    [
+     -34.0,
+     150.5
+    ],
+    [
+     -33.8688,
+     151.2093
+    ]
+   ]
+  },
+  {
+   "name": "RETURN Route B \u2014 Via Flinders Ranges + Clare (Days 7-9)",
+   "folder": "Routes",
+   "desc": "Coober Pedy \u2192 Port Augusta \u2192 Quorn \u2192 Hawker \u2192 Wilpena Pound \u2192 Brachina Gorge \u2192 Orroroo \u2192 Peterborough \u2192 Clare Valley \u2192 Morgan \u2192 Renmark \u2192 Mildura \u2192 Sydney. Best scenery.",
+   "coords": [
+    [
+     -29.0135,
+     134.7544
+    ],
+    [
+     -30.9667,
+     136.0
+    ],
+    [
+     -32.4936,
+     137.7779
+    ],
+    [
+     -32.35,
+     138.0333
+    ],
+    [
+     -31.8833,
+     138.4167
+    ],
+    [
+     -31.5387,
+     138.6531
+    ],
+    [
+     -31.4667,
+     138.7
+    ],
+    [
+     -32.7333,
+     138.6167
+    ],
+    [
+     -32.9667,
+     138.8333
+    ],
+    [
+     -33.8329,
+     138.6093
+    ],
+    [
+     -34.0333,
+     139.6667
+    ],
+    [
+     -34.1667,
+     140.7333
+    ],
+    [
+     -34.1849,
+     142.1634
+    ],
+    [
+     -34.6401,
+     143.558
+    ],
+    [
+     -34.514,
+     144.8429
+    ],
+    [
+     -35.1082,
+     147.3598
+    ],
+    [
+     -34.84,
+     148.9
+    ],
+    [
+     -33.8688,
+     151.2093
+    ]
+   ]
+  },
+  {
+   "name": "RETURN Route C \u2014 Via Broken Hill + Barrier Hwy + Bathurst (Days 7-9)",
+   "folder": "Routes",
+   "desc": "Coober Pedy \u2192 Port Augusta \u2192 Peterborough \u2192 Broken Hill \u2192 Wilcannia \u2192 Cobar \u2192 Nyngan \u2192 Dubbo \u2192 Orange \u2192 Bathurst (Mount Panorama) \u2192 Lithgow \u2192 Sydney. Best for outback NSW and motorsport.",
+   "coords": [
+    [
+     -29.0135,
+     134.7544
+    ],
+    [
+     -30.9667,
+     136.0
+    ],
+    [
+     -32.4936,
+     137.7779
+    ],
+    [
+     -32.9667,
+     138.8333
+    ],
+    [
+     -32.3167,
+     140.3167
+    ],
+    [
+     -32.0558,
+     141.0036
+    ],
+    [
+     -31.9542,
+     141.4677
+    ],
+    [
+     -31.5594,
+     143.3808
+    ],
+    [
+     -31.4973,
+     145.839
+    ],
+    [
+     -31.5605,
+     147.1967
+    ],
+    [
+     -32.2569,
+     148.6011
+    ],
+    [
+     -33.2832,
+     149.0994
+    ],
+    [
+     -33.4408,
+     149.5628
+    ],
+    [
+     -33.4833,
+     150.1667
+    ],
+    [
+     -33.75,
+     150.7
+    ],
+    [
+     -33.8688,
+     151.2093
+    ]
+   ]
+  }
+ ],
+ "markers": [
+  {
+   "name": "Day 0 DEPART \u2014 Brighton-le-Sands",
+   "folder": "Overnight Stops (Red)",
+   "desc": "Departure point. Leave ~4pm Tuesday 18 August. M5 southwest onto Hume Hwy.",
+   "lat": -33.9617,
+   "lon": 151.1583
+  },
+  {
+   "name": "Option 1 \u2014 Goulburn (Night of 18 Aug)",
+   "folder": "Overnight Stops (Red)",
+   "desc": "~200 km, ~3 hrs with traffic. Arrive ~7pm. Stay: Discovery Holiday Park Goulburn (powered caravan sites). Pub: Rocky Brewing Co (Auburn St). Easiest early night.",
+   "lat": -34.7537,
+   "lon": 149.721
+  },
+  {
+   "name": "Option 2 \u2014 Jugiong / Sir George (Night of 18 Aug)",
+   "folder": "Overnight Stops (Red)",
+   "desc": "~285 km, ~3.5 hrs. Arrive ~7:30pm. Stay: Jugiong Caravan Park (riverside, basic). Pub/Dinner: Sir George \u2014 one of the great Hume Hwy pubs. Best experience of the three options.",
+   "lat": -34.8324,
+   "lon": 148.3124
+  },
+  {
+   "name": "Option 3 \u2014 Wagga Wagga (Night of 18 Aug)",
+   "folder": "Overnight Stops (Red)",
+   "desc": "~440 km, ~5 hrs. Arrive ~9-9:30pm (late). Stay: Wagga Wagga Tourist Park. Push option \u2014 latest arrival but shortest Day 1 drive. Eat on the road at Jugiong or a servo.",
+   "lat": -35.1082,
+   "lon": 147.3598
+  },
+  {
+   "name": "Day 1 STAY \u2014 Mungo NP Main Camp (Night of 19 Aug)",
+   "folder": "Overnight Stops (Red)",
+   "desc": "Mungo National Park Main Campground. Powered caravan sites. Book via nationalparks.nsw.gov.au. $8.50/person/day entry. PRIME STARGAZING NIGHT \u2014 moon sets ~9:30pm, pitch dark 10pm onwards. One of the best dark-sky sites in Australia.",
+   "lat": -33.7256,
+   "lon": 143.0659
+  },
+  {
+   "name": "Day 2-4 STAY \u2014 Mundi Mundi Festival Site (20-22 Aug)",
+   "folder": "Overnight Stops (Red)",
+   "desc": "Belmont Station, Mundi Mundi Plains \u2014 35 km north of Broken Hill. Festival camp. BYO food and drinks permitted. Facilities on site. Nights drop to 0-3C \u2014 bring warm gear.",
+   "lat": -31.6167,
+   "lon": 141.45
+  },
+  {
+   "name": "Day 5 STAY \u2014 Woomera Travellers Village (Night of 23 Aug)",
+   "folder": "Overnight Stops (Red)",
+   "desc": "Caravan-friendly powered sites. Cold War rocket testing town \u2014 Missile Park and Heritage Centre are free and extraordinary. Eldo Hotel for dinner.",
+   "lat": -31.1991,
+   "lon": 136.8331
+  },
+  {
+   "name": "Day 6 STAY \u2014 Desert Cave Hotel, Coober Pedy (Night of 24 Aug)",
+   "folder": "Overnight Stops (Red)",
+   "desc": "Underground rooms carved from sandstone. The most iconic accommodation in outback Australia. Book well ahead: desertcave.com.au. Tom & Mary's Taverna underground for dinner.",
+   "lat": -29.0135,
+   "lon": 134.7544
+  },
+  {
+   "name": "PUB \u2014 Surveyor General Inn, Berrima",
+   "folder": "Must-Visit Pubs (Gold)",
+   "desc": "Day 0 dinner stop. Australia's oldest continuously licensed hotel, est. 1835. Stone building, open fire, excellent food. 1 km off the Hume Hwy. Turn off at Mittagong/Bowral exit.",
+   "lat": -34.4789,
+   "lon": 150.3284
+  },
+  {
+   "name": "PUB \u2014 Bidgee Hotel, Hay",
+   "folder": "Must-Visit Pubs (Gold)",
+   "desc": "Day 1 lunch stop. Classic outback country pub. Good pub grub. Last proper town before Mungo NP \u2014 also fuel and supplies here.",
+   "lat": -34.514,
+   "lon": 144.8429
+  },
+  {
+   "name": "PUB \u2014 Crown Hotel, Balranald",
+   "folder": "Must-Visit Pubs (Gold)",
+   "desc": "Day 1 stretch stop. Est. 1882. Cold beer, last stop before the unsealed road into Mungo NP. Last reliable fuel.",
+   "lat": -34.6401,
+   "lon": 143.558
+  },
+  {
+   "name": "PUB \u2014 Maiden Hotel, Menindee",
+   "folder": "Must-Visit Pubs (Gold)",
+   "desc": "Day 2 lunch stop. Burke and Wills rested here in 1860 \u2014 three days before their disastrous push north. Cold beer, Darling River views. Non-negotiable lunch stop on the Broken Hill run.",
+   "lat": -32.3936,
+   "lon": 142.4166
+  },
+  {
+   "name": "PUB \u2014 Palace Hotel, Broken Hill",
+   "folder": "Must-Visit Pubs (Gold)",
+   "desc": "Day 2 afternoon stop. Priscilla Queen of the Desert filming location. Extraordinary murals inside. Non-negotiable schooner.",
+   "lat": -31.9577,
+   "lon": 141.47
+  },
+  {
+   "name": "PUB \u2014 Silverton Hotel, Silverton",
+   "folder": "Must-Visit Pubs (Gold)",
+   "desc": "Days 3-4. Population 37. Real bullet holes in the walls. Mad Max 2 filming location. A donkey in the yard. 25 km from Broken Hill \u2014 the best outback pub in NSW. Non-negotiable.",
+   "lat": -31.8899,
+   "lon": 141.2195
+  },
+  {
+   "name": "PUB \u2014 Olary Hotel, Olary SA",
+   "folder": "Must-Visit Pubs (Gold)",
+   "desc": "Day 5. Heritage-listed. Population ~20. One of the most isolated pubs in South Australia. Cold beer in the void. A 15-minute stretch stop worth doing.",
+   "lat": -32.3167,
+   "lon": 140.3167
+  },
+  {
+   "name": "PUB \u2014 Transcontinental Hotel, Peterborough SA",
+   "folder": "Must-Visit Pubs (Gold)",
+   "desc": "Day 5 lunch stop. Heritage railway junction town where three gauges met. Great schnitty, cold beer. Also check out the Steam Town museum (45 min, optional).",
+   "lat": -32.9667,
+   "lon": 138.8333
+  },
+  {
+   "name": "PUB \u2014 Eldo Hotel, Woomera",
+   "folder": "Must-Visit Pubs (Gold)",
+   "desc": "Day 5 dinner. The pub in Woomera. Cold beer, outback government-town vibe, feeds the workers.",
+   "lat": -31.1966,
+   "lon": 136.8006
+  },
+  {
+   "name": "PUB \u2014 Tom & Mary's Taverna, Coober Pedy",
+   "folder": "Must-Visit Pubs (Gold)",
+   "desc": "Day 6 dinner. Underground restaurant and bar. Greek-Italian. Genuinely excellent food for the middle of nowhere. One of the best meals on the whole trip.",
+   "lat": -29.0175,
+   "lon": 134.7519
+  },
+  {
+   "name": "PUB \u2014 Opal Inn Hotel, Coober Pedy",
+   "folder": "Must-Visit Pubs (Gold)",
+   "desc": "Day 6. Main pub in Coober Pedy. Lively, cold beer, session atmosphere.",
+   "lat": -29.013,
+   "lon": 134.753
+  },
+  {
+   "name": "PUB [Route A] \u2014 The Exeter Hotel, Adelaide",
+   "folder": "Must-Visit Pubs (Gold)",
+   "desc": "Route A, Day 7. The soul of Adelaide pub culture on Rundle Street. Cold beer, great atmosphere, starting point for Adelaide pub crawl.",
+   "lat": -34.9224,
+   "lon": 138.6058
+  },
+  {
+   "name": "PUB [Route A] \u2014 Renmark Hotel, Renmark",
+   "folder": "Must-Visit Pubs (Gold)",
+   "desc": "Route A, Day 8. 1897 riverfront heritage pub on the Murray. One of the great country pubs in SA.",
+   "lat": -34.169,
+   "lon": 140.7464
+  },
+  {
+   "name": "PUB/REST [Route A] \u2014 Stefano's Grand Hotel, Mildura",
+   "folder": "Must-Visit Pubs (Gold)",
+   "desc": "Route A, Day 8. Stefano de Pieri's legendary Italian restaurant at the Grand Hotel. Book ahead \u2014 one of the best restaurants in regional Australia.",
+   "lat": -34.1849,
+   "lon": 142.1634
+  },
+  {
+   "name": "REST [Route B] \u2014 Old Ghan Restaurant, Hawker",
+   "folder": "Must-Visit Pubs (Gold)",
+   "desc": "Route B, Day 7. Former station master's residence, good outback meals. Last stop before Wilpena Pound.",
+   "lat": -31.8833,
+   "lon": 138.4167
+  },
+  {
+   "name": "REST [Route B] \u2014 Skillogalee Winery, Clare Valley",
+   "folder": "Must-Visit Pubs (Gold)",
+   "desc": "Route B, Day 8. Best lunch restaurant in the Clare Valley. Book ahead.",
+   "lat": -33.82,
+   "lon": 138.61
+  },
+  {
+   "name": "PUB [Route B] \u2014 Renmark Hotel, Renmark",
+   "folder": "Must-Visit Pubs (Gold)",
+   "desc": "Route B, Day 8. Same as Route A \u2014 1897 riverfront heritage pub on the Murray.",
+   "lat": -34.169,
+   "lon": 140.7464
+  },
+  {
+   "name": "PUB [Route C] \u2014 Mario's Palace Hotel, Broken Hill",
+   "folder": "Must-Visit Pubs (Gold)",
+   "desc": "Route C, Day 7. The actual Priscilla Queen of the Desert hotel. Stay here for one night \u2014 mural-covered rooms, great pub downstairs.",
+   "lat": -31.9542,
+   "lon": 141.4677
+  },
+  {
+   "name": "PUB [Route C] \u2014 Imperial Hotel, Wilcannia",
+   "folder": "Must-Visit Pubs (Gold)",
+   "desc": "Route C, Day 8. Cold beer and Darling River history. Historic sandstone town.",
+   "lat": -31.5594,
+   "lon": 143.3808
+  },
+  {
+   "name": "PUB [Route C] \u2014 Royal Hotel, Cobar",
+   "folder": "Must-Visit Pubs (Gold)",
+   "desc": "Route C, Day 8. Est. 1898. One of the most spectacular two-storey cast-iron lace verandahs in Australia \u2014 a 50-metre facade. Lunch here. Non-negotiable.",
+   "lat": -31.4973,
+   "lon": 145.839
+  },
+  {
+   "name": "FUEL \u2014 Goulburn",
+   "folder": "Fuel Stops (Blue)",
+   "desc": "Day 0/1 \u2014 Multiple servos. Fill up before continuing southwest.",
+   "lat": -34.7537,
+   "lon": 149.721
+  },
+  {
+   "name": "FUEL \u2014 Wagga Wagga",
+   "folder": "Fuel Stops (Blue)",
+   "desc": "Day 1 \u2014 Fill up here before continuing to Narrandera/Hay.",
+   "lat": -35.1082,
+   "lon": 147.3598
+  },
+  {
+   "name": "FUEL \u2014 Hay",
+   "folder": "Fuel Stops (Blue)",
+   "desc": "Day 1 \u2014 IMPORTANT fuel stop. Fill up here. Last reliable fuel before Mungo NP (via Balranald). Also last town with food options.",
+   "lat": -34.514,
+   "lon": 144.8429
+  },
+  {
+   "name": "FUEL \u2014 Balranald",
+   "folder": "Fuel Stops (Blue)",
+   "desc": "Day 1 \u2014 Last fuel before the unsealed road into Mungo NP. Also last reliable phone coverage. Download offline maps here.",
+   "lat": -34.6401,
+   "lon": 143.558
+  },
+  {
+   "name": "FUEL \u2014 Menindee",
+   "folder": "Fuel Stops (Blue)",
+   "desc": "Day 2 \u2014 Fuel available. Worth topping up before the Broken Hill run.",
+   "lat": -32.3936,
+   "lon": 142.4166
+  },
+  {
+   "name": "FUEL \u2014 Broken Hill",
+   "folder": "Fuel Stops (Blue)",
+   "desc": "Day 2 \u2014 Fill ALL vehicles and jerry cans here. Last reliable fuel before Mundi Mundi. Multiple servos (Caltex, BP, United).",
+   "lat": -31.9542,
+   "lon": 141.4677
+  },
+  {
+   "name": "FUEL \u2014 Port Augusta",
+   "folder": "Fuel Stops (Blue)",
+   "desc": "Day 5 \u2014 Major fuel and supplies stop. Crossroads of Australia. Top up before Woomera.",
+   "lat": -32.4936,
+   "lon": 137.7779
+  },
+  {
+   "name": "FUEL \u2014 Glendambo",
+   "folder": "Fuel Stops (Blue)",
+   "desc": "Day 6 \u2014 CRITICAL fuel stop on Stuart Hwy between Port Augusta and Coober Pedy. There is NOTHING for 250 km either side. Do not skip.",
+   "lat": -30.9667,
+   "lon": 136.0
+  },
+  {
+   "name": "FUEL \u2014 Woomera",
+   "folder": "Fuel Stops (Blue)",
+   "desc": "Day 6 \u2014 Top up before Stuart Hwy north to Coober Pedy.",
+   "lat": -31.1991,
+   "lon": 136.8331
+  },
+  {
+   "name": "FUEL [Route A] \u2014 Balranald (return)",
+   "folder": "Fuel Stops (Blue)",
+   "desc": "Route A, Day 9 \u2014 Fuel stop on the return run Mildura to Hay.",
+   "lat": -34.6401,
+   "lon": 143.558
+  },
+  {
+   "name": "FUEL [Route C] \u2014 Nyngan",
+   "folder": "Fuel Stops (Blue)",
+   "desc": "Route C, Day 8 \u2014 Fuel and stretch. The Bogan River runs through here.",
+   "lat": -31.5605,
+   "lon": 147.1967
+  },
+  {
+   "name": "FUEL [Route C] \u2014 Lithgow",
+   "folder": "Fuel Stops (Blue)",
+   "desc": "Route C, Day 9 \u2014 Final fuel stop before Sydney on the Bathurst run.",
+   "lat": -33.4833,
+   "lon": 150.1667
+  },
+  {
+   "name": "ATTRACTION \u2014 Walls of China (The Lunette), Mungo NP",
+   "folder": "Attractions & POIs (Green)",
+   "desc": "Day 1. The iconic crescent-shaped eroded landform at Mungo NP. UNESCO World Heritage. 50,000-year-old human remains found here \u2014 oldest outside Africa. Afternoon light is extraordinary. Walk the viewing platform.",
+   "lat": -33.7152,
+   "lon": 143.0519
+  },
+  {
+   "name": "ATTRACTION \u2014 Red Top Lookout, Mungo NP",
+   "folder": "Attractions & POIs (Green)",
+   "desc": "Day 1. Best panoramic view over the ancient dry lake bed. Go at sunset.",
+   "lat": -33.73,
+   "lon": 143.07
+  },
+  {
+   "name": "ATTRACTION \u2014 Mungo NP Visitor Centre",
+   "folder": "Attractions & POIs (Green)",
+   "desc": "Day 1. Check ranger walk availability on arrival. Maps, park info, book astronomy program if available.",
+   "lat": -33.7256,
+   "lon": 143.0659
+  },
+  {
+   "name": "ATTRACTION \u2014 Line of Lode Miners Memorial, Broken Hill",
+   "folder": "Attractions & POIs (Green)",
+   "desc": "Day 2. Take the lift to the top of the old mine shaft. Panoramic views over Broken Hill and the slag heaps. Most moving tribute to Australian mining history.",
+   "lat": -31.9533,
+   "lon": 141.4719
+  },
+  {
+   "name": "ATTRACTION \u2014 Pro Hart Gallery, Broken Hill",
+   "folder": "Attractions & POIs (Green)",
+   "desc": "Day 2. Broken Hill's most famous artist, internationally renowned. Worth 20 minutes even if you're not an art person.",
+   "lat": -31.9561,
+   "lon": 141.4674
+  },
+  {
+   "name": "ATTRACTION \u2014 The Big Picture Gallery (Silver City Mint)",
+   "folder": "Attractions & POIs (Green)",
+   "desc": "Day 2. The world's longest landscape painting \u2014 100 metres. Genuinely impressive.",
+   "lat": -31.96,
+   "lon": 141.465
+  },
+  {
+   "name": "ATTRACTION \u2014 Mundi Mundi Lookout",
+   "folder": "Attractions & POIs (Green)",
+   "desc": "Days 3-4. 360-degree views over the Mundi Mundi Plains. Spectacular at sunset. One of the great outback panoramas in Australia.",
+   "lat": -31.8667,
+   "lon": 141.5
+  },
+  {
+   "name": "ATTRACTION \u2014 Silverton (Mad Max town)",
+   "folder": "Attractions & POIs (Green)",
+   "desc": "Days 3-4. Population 37. Mad Max 2, Razorback, and a dozen other films shot here. The Silverton Hotel has actual bullet holes in the walls. Get there at lunch before the bus tours.",
+   "lat": -31.8899,
+   "lon": 141.2195
+  },
+  {
+   "name": "ATTRACTION \u2014 Woomera Missile Park",
+   "folder": "Attractions & POIs (Green)",
+   "desc": "Day 5. Open-air display of Cold War rockets, guided missiles, and aircraft. Free. Genuinely impressive \u2014 Australia's secret role in Cold War weapons testing.",
+   "lat": -31.1991,
+   "lon": 136.8078
+  },
+  {
+   "name": "ATTRACTION \u2014 Woomera Heritage Centre",
+   "folder": "Attractions & POIs (Green)",
+   "desc": "Day 5. The history of the Blue Streak missile program, the space race, and Australia's classified Cold War history. More gripping than it sounds.",
+   "lat": -31.1991,
+   "lon": 136.81
+  },
+  {
+   "name": "ATTRACTION \u2014 Old Timers Mine, Coober Pedy",
+   "folder": "Attractions & POIs (Green)",
+   "desc": "Day 6. Best mine tour in Coober Pedy. Original 1916 dugout home, hands-on opal mining experience.",
+   "lat": -29.0135,
+   "lon": 134.7544
+  },
+  {
+   "name": "ATTRACTION \u2014 Underground St Peter & Paul Church, Coober Pedy",
+   "folder": "Attractions & POIs (Green)",
+   "desc": "Day 6. A church carved into rock. Stained glass, altar, extraordinary silence. One of the most remarkable places in outback Australia.",
+   "lat": -29.009,
+   "lon": 134.755
+  },
+  {
+   "name": "ATTRACTION \u2014 The Breakaways, Coober Pedy",
+   "folder": "Attractions & POIs (Green)",
+   "desc": "Day 6. 25 km north of town. Mesa/escarpment landscape that looks like Mars. Drive out for sunset (~5:30pm in August). One of the most photographed landscapes in outback SA.",
+   "lat": -29.0,
+   "lon": 134.7833
+  },
+  {
+   "name": "ATTRACTION [Route A] \u2014 Adelaide Central Market",
+   "folder": "Attractions & POIs (Green)",
+   "desc": "Route A, Day 7. Best food market in Australia (open until 5:30pm, closed Sunday). Deli, produce, coffee. Go on arrival in Adelaide.",
+   "lat": -34.9244,
+   "lon": 138.6001
+  },
+  {
+   "name": "ATTRACTION [Route A] \u2014 Seppeltsfield, Barossa Valley",
+   "folder": "Attractions & POIs (Green)",
+   "desc": "Route A, Day 8. Historic Barossa winery. The 100-year-old Centennial Collection para vintage tawny is a must-taste. Great cellar door.",
+   "lat": -34.5252,
+   "lon": 138.8951
+  },
+  {
+   "name": "ATTRACTION [Route B] \u2014 Wilpena Pound, Flinders Ranges",
+   "folder": "Attractions & POIs (Green)",
+   "desc": "Route B, Day 7. Natural amphitheatre \u2014 a ring of quartzite mountains enclosing a vast flat basin. One of the great natural landmarks of South Australia. Walking tracks from the resort.",
+   "lat": -31.5387,
+   "lon": 138.6531
+  },
+  {
+   "name": "ATTRACTION [Route B] \u2014 Brachina Gorge, Flinders Ranges",
+   "folder": "Attractions & POIs (Green)",
+   "desc": "Route B, Day 8. Drive through at dawn. 600 million-year-old rock walls \u2014 UNESCO geoheritage site. The colours at sunrise are extraordinary.",
+   "lat": -31.4667,
+   "lon": 138.7
+  },
+  {
+   "name": "ATTRACTION [Route C] \u2014 Great Cobar Heritage Centre",
+   "folder": "Attractions & POIs (Green)",
+   "desc": "Route C, Day 8. The history of the copper mining boom. Good 45-min stop before or after lunch at the Royal Hotel.",
+   "lat": -31.4973,
+   "lon": 145.839
+  },
+  {
+   "name": "ATTRACTION [Route C] \u2014 Mount Panorama Circuit, Bathurst",
+   "folder": "Attractions & POIs (Green)",
+   "desc": "Route C, Day 9. MANDATORY STOP (especially for Rob). The 6.2 km Bathurst 1000 race circuit is a public road \u2014 drive a lap (speed limits apply). National Motor Racing Museum at the base ($20pp, 45 min). One of the great motorsport venues in the world.",
+   "lat": -33.4408,
+   "lon": 149.5628
+  },
+  {
+   "name": "ATTRACTION [Route C] \u2014 Taronga Western Plains Zoo, Dubbo",
+   "folder": "Attractions & POIs (Green)",
+   "desc": "Route C, Day 8. Open-range zoo with lions, cheetahs, giraffes, rhinos. The only savanna zoo setting in Australia. Evening entry possible (~4:30pm).",
+   "lat": -32.2769,
+   "lon": 148.6011
+  },
+  {
+   "name": "STARGAZE \u2014 Mungo NP (Prime Night: 19 Aug)",
+   "folder": "Stargazing Locations (Purple)",
+   "desc": "BEST STARGAZING NIGHT OF THE TRIP. Moon (waxing crescent) sets ~9:30pm. Completely dark sky from 10pm. Milky Way core, Magellanic Clouds, Coal Sack Nebula, zodiacal light before dawn. One of Australia's premier dark-sky sites \u2014 360-degree horizon, zero light pollution.",
+   "lat": -33.7152,
+   "lon": 143.0519
+  },
+  {
+   "name": "STARGAZE \u2014 Mundi Mundi Plains (20-22 Aug)",
+   "folder": "Stargazing Locations (Purple)",
+   "desc": "Festival nights. Moon rises later each night but sets mid-evening. Late-night music under the Milky Way is the signature Mundi Mundi experience.",
+   "lat": -31.6167,
+   "lon": 141.45
+  },
+  {
+   "name": "STARGAZE \u2014 Coober Pedy (24 Aug)",
+   "folder": "Stargazing Locations (Purple)",
+   "desc": "Moon approaching full by 24 Aug (~80% illuminated). Still worth looking up \u2014 zero light pollution. From The Breakaways in particular the sky is exceptional.",
+   "lat": -29.0135,
+   "lon": 134.7544
+  }
+ ]
+}
