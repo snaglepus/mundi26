@@ -1,53 +1,13 @@
-import { useEffect, useRef } from 'react'
 import { days, festival, pubByName, playlistTitle, imageFor } from '../data/content.js'
 import DayMap from './DayMap.jsx'
 import { useLightbox } from './Lightbox.jsx'
 
-// On mobile the day image is sticky; collapse it to a slim banner once it
-// pins, padding the flow with an equivalent margin so the text never jumps.
-const NAV_H = 52
-const COMPACT_H = 82 // 70px banner image + figure padding, must match the mobile CSS
 function DayMedia({ image, caption }) {
-  const figRef = useRef(null)
-  const sentinelRef = useRef(null)
-  useEffect(() => {
-    const fig = figRef.current
-    const sentinel = sentinelRef.current
-    if (!fig || !sentinel) return
-    const mq = window.matchMedia('(max-width: 860px)')
-    const setStuck = (on) => {
-      if (on && !fig.classList.contains('stuck')) {
-        fig.style.marginBottom = `${Math.max(0, fig.offsetHeight - COMPACT_H)}px`
-        fig.classList.add('stuck')
-      } else if (!on && fig.classList.contains('stuck')) {
-        fig.classList.remove('stuck')
-        fig.style.marginBottom = ''
-      }
-    }
-    const check = () => {
-      setStuck(mq.matches && sentinel.getBoundingClientRect().top < NAV_H)
-    }
-    const obs = new IntersectionObserver(check, { rootMargin: `-${NAV_H}px 0px 0px 0px`, threshold: 0 })
-    obs.observe(sentinel)
-    window.addEventListener('scroll', check, { passive: true })
-    window.addEventListener('resize', check)
-    mq.addEventListener('change', check)
-    check()
-    return () => {
-      obs.disconnect()
-      window.removeEventListener('scroll', check)
-      window.removeEventListener('resize', check)
-      mq.removeEventListener('change', check)
-    }
-  }, [])
   return (
-    <>
-      <span ref={sentinelRef} className="day-media-sentinel" aria-hidden="true" />
-      <figure className="day-media" ref={figRef}>
-        <img src={image} alt={caption} loading="lazy" />
-        <figcaption>{caption}</figcaption>
-      </figure>
-    </>
+    <figure className="day-media">
+      <img src={image} alt={caption} loading="lazy" />
+      <figcaption>{caption}</figcaption>
+    </figure>
   )
 }
 

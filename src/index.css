@@ -189,9 +189,10 @@ h2.title em { font-style: italic; color: var(--gold); }
   transition: all 0.2s; background: #fff;
 }
 .day-chips a:hover { border-color: var(--dust); color: var(--dust); }
-.day-block { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: start; padding: 64px 0; border-top: 1px solid var(--line-dark); scroll-margin-top: 90px; position: relative; }
-.day-media-sentinel { position: absolute; top: 0; left: 0; width: 1px; height: 1px; }
-.day-block:not(.wide) .day-media { position: sticky; top: 96px; }
+.day-block { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: start; padding: 64px 0; border-top: 1px solid var(--line-dark); scroll-margin-top: 90px; }
+@media (min-width: 861px) {
+  .day-block:not(.wide) .day-media { position: sticky; top: 96px; }
+}
 .day-block:first-of-type { border-top: none; padding-top: 12px; }
 .day-block.flip .day-media { order: 2; }
 .day-media { position: relative; }
@@ -230,16 +231,8 @@ h2.title em { font-style: italic; color: var(--gold); }
 .day-block.wide .day-media img { aspect-ratio: 21/9; }
 @media (max-width: 860px) {
   .day-block, .day-block.wide { display: block; padding: 44px 0; }
+  .day-media { margin-bottom: 26px; }
   .stops .t { flex-basis: 74px; }
-  /* the day image pins under the nav and collapses to a slim banner */
-  .day-block:not(.wide) .day-media, .day-block.wide .day-media {
-    position: sticky; top: 44px; z-index: 30;
-    background: var(--cream); padding: 8px 0 4px; margin-bottom: 24px;
-    transition: margin-bottom 0.28s ease;
-  }
-  .day-media img { transition: height 0.28s ease, box-shadow 0.28s ease; }
-  .day-media.stuck img { height: 70px; aspect-ratio: auto; object-fit: cover; box-shadow: none; }
-  .day-media.stuck figcaption { display: none; }
 }
 
 /* per-day pubs, tunes, route map, mini gallery */
