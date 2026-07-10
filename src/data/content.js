@@ -4,12 +4,12 @@ const img = (name) => `${import.meta.env.BASE_URL}images/${name}`
 export const meta = {
   title: 'Mundi Mundi Bash 2026',
   subtitle: "The Outback Lads' Trip",
-  tagline: 'Ten days. Three rigs. Nine blokes. Four thousand kilometres of outback NSW and SA - festival, opal mines, missile parks and the Murray River.',
+  tagline: 'Ten days. Three rigs. Eight blokes. Four thousand kilometres of outback NSW and SA - festival, opal mines, missile parks and the Murray River.',
   departISO: '2026-08-18T16:30:00+10:00',
   stats: [
     { value: '10', label: 'Days' },
     { value: '~4,000', label: 'Kilometres' },
-    { value: '9', label: 'Lads' },
+    { value: '8', label: 'Lads' },
     { value: '3', label: 'Rigs' },
     { value: '17', label: 'Pubs' },
     { value: '21+', label: 'Acts' },
@@ -25,11 +25,11 @@ export const quickCards = [
 
 export const crew = [
   { rig: 'Camper Van 1', people: ['Rob James', 'Marcus James', 'Christian James', 'Dennis Hodges'], icon: '🚐' },
-  { rig: 'Camper Van 2', people: ['Kevin Forster', 'Keenan Forster', 'Campbell Tilley'], icon: '🚐' },
+  { rig: 'Camper Van 2', people: ['Kevin Forster', 'Keenan Forster'], icon: '🚐' },
   { rig: 'The Caravan', people: ['Barry Rallis', 'Marlon Rallis'], icon: '🏕️' },
 ]
 
-export const ticketFlag = '11 adult tickets and 4 vehicle passes are purchased; 9 going with 3 rigs. 2 spare tickets + 1 spare vehicle pass to sell or reallocate - resale terms at mundimundibash.com.au.'
+export const ticketFlag = 'Tickets sorted: 8 confirmed and purchased, with camping spots AND VIP access provided by our good friend Marc Christowski. Beers are owed.'
 
 // ---------------------------------------------------------------- festival
 export const festival = {
@@ -40,8 +40,9 @@ export const festival = {
   headliners: ['The Teskey Brothers', 'John Butler', 'Jessica Mauboy', 'Boy & Bear', 'Jon Stevens', 'Baby Animals'],
   lineup: ['The Whitlams', 'Tim Finn', 'Richard Clapton', 'Leo Sayer', 'Troy Cassar-Daley', 'Wendy Matthews', 'Chocolate Starfish', 'The Radiators', 'Shane Howard', 'Fanny Lumsden', '19-Twenty', 'Furnace and the Fundamentals', 'Hot Potato Band', 'Wes Carr', '50 Years of Fleetwood Mac'],
   facts: [
-    { label: 'Camping', value: 'Included - early entry Mon 17 Aug, out by Mon 24 Aug' },
-    { label: 'Tickets', value: '✅ Purchased - 11 adults + 4 vehicle passes' },
+    { label: 'Tickets', value: '✅ 8 confirmed and purchased, with VIP access' },
+    { label: 'Camping', value: 'Spots provided by our good friend Marc Christowski' },
+    { label: 'House rule', value: 'Once on site, vehicles stay in the campgrounds until we leave Sunday' },
     { label: 'Set times', value: 'Drop on the Bash App - download before Sydney' },
     { label: 'Nights', value: '0-3°C on the plains. Warm gear is not optional.' },
   ],
@@ -56,13 +57,13 @@ export const days = [
     date: 'Tue 18 Aug',
     day: 'Day 0',
     title: 'The Great Escape',
-    route: 'Brighton-le-Sands → the Hume → overnight stop',
+    route: 'Muster near Brighton-le-Sands → the Hume → overnight stop',
     image: img('surveyor-general.jpg'),
     imageCaption: 'Surveyor General Inn, Berrima - est. 1835',
     km: '200–540 km',
-    summary: 'Roll out at 4:30pm, dinner at the oldest continuously licensed pub in Australia, then push down the Hume as far as the group dares.',
+    summary: 'Muster near Brighton-le-Sands and get moving the moment the convoy is assembled - the earlier we escape Sydney, the less traffic we sit in and the more daylight we have at the other end. Dinner at the oldest continuously licensed pub in Australia, then push down the Hume as far as the group dares.',
     stops: [
-      { time: '4:30pm', name: 'Depart Brighton-le-Sands', desc: 'M5 onto the Hume (M31) southwest. Fill every tank before leaving Sydney.' },
+      { time: 'ASAP', name: 'Muster near Brighton-le-Sands (exact spot TBC)', desc: 'Meeting point, not a sightseeing stop: arrive fuelled, packed and ready to roll straight onto the M5 → Hume (M31). Target 4:30pm at the latest - every minute earlier is ten fewer stuck in Sydney traffic.' },
       { time: '6:30pm', name: 'Surveyor General Inn, Berrima', desc: "Est. 1835 - Australia's oldest continuously licensed hotel. Stone walls, open fire, proper pub food. The right first meal before the outback swallows the convoy." },
       { time: 'from 7:30pm', name: 'Overnight stop (group call)', desc: 'Four options below - Wagga preferred. All sealed either way.' },
     ],
@@ -76,13 +77,16 @@ export const days = [
         { name: 'Hay (push)', detail: '~540 km · arrive ~10:30pm. Already in the outback, kitchens shut - eat en route. Waking up on the Hay Plain is the payoff.' },
       ],
     },
+    notes: [
+      'Two rules for Day 0: leave as early as humanly possible to beat Sydney traffic, and get to the overnight stop well ahead of time - checking in, levelling the caravan and finding dinner is all far easier in daylight.',
+    ],
     pubs: ['Surveyor General Inn', 'Sir George'],
     playlists: ['day0'],
     routeMap: {
       gmaps: 'https://www.google.com/maps/dir/Brighton-Le-Sands+NSW/Berrima+NSW/Goulburn+NSW/Jugiong+NSW/Wagga+Wagga+NSW/Hay+NSW',
       path: [[-33.962, 151.158], [-34.489, 150.339], [-34.75, 149.72], [-34.84, 148.91], [-34.83, 148.325], [-35.07, 148.11], [-35.115, 147.369], [-34.75, 146.55], [-34.508, 144.851]],
       points: [
-        { name: 'Brighton-le-Sands', lat: -33.962, lon: 151.158 },
+        { name: 'Muster point (near Brighton-le-Sands, TBC)', lat: -33.962, lon: 151.158 },
         { name: 'Berrima (dinner)', lat: -34.489, lon: 150.339 },
         { name: 'Goulburn (opt 1)', lat: -34.75, lon: 149.72 },
         { name: 'Jugiong (opt 2)', lat: -34.83, lon: 148.325 },
@@ -162,26 +166,25 @@ export const days = [
     image: img('hero-mundi-mundi.jpg'),
     imageCaption: 'The Mundi Mundi Plains',
     km: '~340 km, then minimal',
-    summary: 'Thursday is the best pub crawl in western NSW, ending at the festival gates. Then two full days of music under a widescreen sky, with Broken Hill and Silverton side-quests for the restless.',
+    summary: 'Thursday is the best pub crawl in western NSW, ending at the festival gates. And the gates matter: once the convoy is inside the campgrounds, vehicles cannot leave until we roll out on Sunday. Whatever sightseeing we want happens on the way in or on the way out.',
     stopsTitle: 'Thursday: getting there is half the point',
     stops: [
       { time: '9am', name: 'Pooncarie Hotel', desc: 'Est. 1893, population 60, verandah on the Darling. Cold beer at 9am if you want it - it’s a pub, they don’t judge. FUEL: last bowser before Broken Hill.' },
       { time: '11am', name: "Maiden's Hotel, Menindee", desc: 'Reputedly the second-oldest continuously operating pub in NSW. Burke and Wills staged their 1860 expedition here. Then the Menindee Lakes: drowned red gums, thousands of pelicans, total silence.' },
       { time: '1pm', name: 'Broken Hill stock-up', desc: 'Groceries (Woolies/Coles), bulk alcohol (Dan Murphy’s), more ice than seems sensible, cash, pharmacy - and every tank plus every jerry can. Last reliable fuel before the site.' },
       { time: '3:30pm', name: 'Silverton Hotel', desc: 'Real bullet holes, walls of memorabilia, donkeys that wander in for a drink. Mad Max 2 was filmed on these plains - the museum next door has two Interceptors. Two beers, not four; there’s driving left.' },
-      { time: '5pm', name: 'Festival site', desc: '9 km north of Silverton. Set up camp before dark, cold beer, sunset over the plain. First acts Thursday evening.' },
+      { time: '5pm', name: 'Festival site', desc: '9 km north of Silverton. Set up camp before dark, cold beer, sunset over the plain. First acts Thursday evening. This is the last vehicle movement until Sunday.' },
     ],
-    beyondTitle: 'Beyond the music (pick per day; town is 35 km away)',
+    beyondTitle: 'Sightseeing: Thursday on the way in, Sunday on the way out',
     beyond: [
-      { time: 'daily', name: 'Mundi Mundi Lookout', desc: 'The 360° sunset over the plain, 5 minutes from the site. Go at least once.' },
-      { time: 'pick a day', name: 'Living Desert Sculptures', desc: '12 sandstone sculptures on a ridge that glow red at sunset - one of the best photo stops in outback NSW.' },
-      { time: 'pick a day', name: 'Palace Hotel, Broken Hill', desc: 'The Priscilla pub - Botticelli’s Venus on the ceiling among floor-to-ceiling murals. A schooner here is non-negotiable.' },
-      { time: 'pick a day', name: 'Bells Milk Bar', desc: 'Australia’s oldest milk bar (1892), frozen in its 1956 fit-out. The lads will mock it and then order seconds.' },
-      { time: 'pick a day', name: 'Line of Lode + Pro Hart + Big Picture', desc: 'The miners’ memorial on the slag heap is quietly devastating; the world’s largest acrylic-on-canvas is 100 m round.' },
-      { time: 'book ahead', name: 'Outback Astronomy Sky Show', desc: '$72pp, reclining chairs, binoculars, guided tour of the southern sky. Book before leaving Sydney.' },
+      { time: 'thu, way in', name: 'Bells Milk Bar + a Palace schooner', desc: 'Squeeze into the Broken Hill stock-up window: Australia’s oldest milk bar (1892, frozen in its 1956 fit-out), then one non-negotiable schooner under the Priscilla murals at the Palace.' },
+      { time: 'sun, way out', name: 'Living Desert Sculptures', desc: '12 sandstone sculptures on a ridge, 15 min north of Broken Hill - catch them in morning light on the Sunday drive out. One of the best photo stops in outback NSW.' },
+      { time: 'sun, way out', name: 'Line of Lode Miners Memorial', desc: 'Lookout over the city from the top of the slag heap; the memorial to 800+ dead miners is quietly devastating. A quick stop before the Barrier Highway.' },
     ],
     festival: true,
     notes: [
+      'HARD RULE: once inside the festival campgrounds, vehicles cannot leave until departure on Sunday. No town runs, no lookout drives - plan supplies and sightseeing around it.',
+      'Mundi Mundi Lookout is CLOSED for the duration of the event.',
       'Toilets, showers, food vendors and bars on site. BYO permitted in camp.',
       'Days 12-18°C, nights 0-3°C - warm gear is not optional. Dust masks or buffs for windy days. Water at 5L/person/day.',
       'Moon sets 10-11pm each night: late sets under a properly dark sky, Milky Way over the main stage.',
@@ -216,7 +219,7 @@ export const days = [
       { key: 'silverton-town.jpg', caption: 'Silverton' },
       { key: 'mad-max.jpg', caption: 'Mad Max 2 Museum' },
       { key: 'silverton-donkey.jpg', caption: 'A regular, apparently' },
-      { key: 'mundi-lookout.jpg', caption: 'Mundi Mundi Lookout' },
+      { key: 'mundi-lookout.jpg', caption: 'Mundi Mundi Lookout (closed during the Bash)' },
       { key: 'hero-mundi-mundi.jpg', caption: 'The plains' },
     ],
   },
@@ -235,7 +238,10 @@ export const days = [
       { time: '+145 km', name: 'Olary Hotel', desc: 'Heritage-listed, population ~20, corrugated iron and characters. 15-minute stretch, cold lemon squash, onwards.' },
       { time: '11am SA', name: 'Peterborough', desc: 'Lunch in a genuine 1890s railway-town pub (Transcontinental or Royal). Steam Town museum for the rail nerds.' },
       { time: '+175 km', name: 'Port Augusta', desc: 'Fuel, all vehicles. The Crossroads of Australia. Arid Lands Botanic Garden for a free leg stretch with Flinders views.' },
-      { time: '3:30pm', name: 'Woomera', desc: 'Built 1947 for the Anglo-Australian rocket program, still an active defence area. Missile Park: open-air rows of Cold War rockets including a Blue Streak and a Black Arrow. Heritage Centre open to 5pm.' },
+      { time: '3:30pm', name: 'Woomera Missile Park', desc: 'Built 1947 for the Anglo-Australian rocket program, still an active defence area. Open-air rows of Cold War rockets and aircraft spread over two blocks: a Blue Streak, a Black Arrow, Sea Slug and Kestrel missiles, and a Canberra bomber out front. Free, self-guided.' },
+      { time: '4pm', name: 'Heritage Centre + ten-pin bowling', desc: 'The story of Australia’s classified space race, free entry, open to 5pm. Same building: a ten-pin bowling alley left over from the American years, open Sunday afternoons 1-5pm. Eight blokes, two lanes, loser buys at the Eldo.' },
+      { time: 'golden hour', name: 'Lake Hart', desc: '40 km up the Stuart Highway: a vast white salt lake with a roadside lookout. Cross the old Ghan line and walk out onto the crust as the sun drops. If the crew is cooked, it keeps: it’s tomorrow’s first stop anyway.' },
+      { time: 'plan B', name: "Spud's Roadhouse, Pimba", desc: 'The classic outback roadhouse at the highway junction 7 km back: fuel, a bar and a proper roadhouse feed if the Eldo is heaving.' },
       { time: 'night', name: 'Eldo Hotel', desc: 'The only pub in town - bar from 3pm, dinner 5-8:45pm. Stay at Woomera Traveller’s Village. The oval behind the Eldo is a fine dark-sky spot after moonset.' },
     ],
     notes: ['Do not wander beyond the heritage precinct - the rest is operational defence land.'],
@@ -274,6 +280,7 @@ export const days = [
     summary: 'Dead-straight Stuart Highway to the opal capital of the world, where half the town lives underground - and tonight, so do you.',
     stops: [
       { time: '8:30am', name: 'Depart Woomera', desc: 'Stuart Highway north. Ochre scrub to the horizon, meditative. Queue the audiobooks.' },
+      { time: '+40 km', name: 'Lake Hart', desc: 'If we skipped it last night: the salt-lake lookout is right off the highway. Twenty minutes, one team photo on the white crust, back on the road.' },
       { time: '+110 km', name: 'Glendambo', desc: 'FUEL, no exceptions - nothing for 250 km after. Photo stop: "Elevation 150 m, population 30 humans, 22,500 sheep."' },
       { time: '12:30pm', name: 'Coober Pedy', desc: '~70% of the world’s gem-quality opal; dugout homes to escape 45°C summers. Moonscape looks, frontier-town manners.' },
       { time: 'arvo', name: 'Pick 3 or 4', desc: 'Old Timers Mine (genuine 1916 hand-dug mine) · Umoona Opal Mine & Museum · the underground Serbian Orthodox church · Josephine’s joey feeding at 5:30pm · the Pitch Black spaceship prop just parked in the main street · Opal Fields Golf Club (zero grass, reciprocal rights at St Andrews - genuinely).' },
@@ -415,7 +422,7 @@ export const moonNights = [
   { date: '25–27 Aug', loc: 'Return legs', moon: 'Approaching full', quality: 'Moonlit landscape instead', phase: '🌕' },
 ]
 
-export const starKit = ['Red-light torch or headlamp (red mode)', '7×50 binoculars', 'Stellarium or SkySafari app', 'Reclining camp chair', 'Sleeping bag rated to 0°C', 'Outback Astronomy Sky Show, Broken Hill - $72pp, book ahead']
+export const starKit = ['Red-light torch or headlamp (red mode)', '7×50 binoculars', 'Stellarium or SkySafari app', 'Reclining camp chair', 'Sleeping bag rated to 0°C']
 
 // ---------------------------------------------------------------- logistics
 export const fuelPlan = [
@@ -443,13 +450,12 @@ export const packing = [
 ]
 
 export const bookings = [
-  { item: 'Festival tickets × 11', status: 'done', note: '2 spare to sell or reallocate', url: 'https://mundimundibash.com.au' },
-  { item: '4 × Vehicle Entry Passes', status: 'done', note: '1 spare', url: 'https://mundimundibash.com.au' },
+  { item: 'Festival tickets × 8', status: 'done', note: 'Confirmed and purchased, with VIP access', url: 'https://mundimundibash.com.au' },
+  { item: 'Camping spots at the Bash', status: 'done', note: 'Provided by Marc Christowski - beers owed' },
   { item: 'Camper vans × 2', status: 'urgent', note: 'Book NOW for 18-27 Aug', url: 'https://www.britz.com/au' },
   { item: 'Mungo Main Camp sites', status: 'todo', note: 'Night of 19 Aug', url: 'https://www.nationalparks.nsw.gov.au/camping-and-accommodation/campgrounds/main-campground' },
   { item: 'Desert Cave Hotel (or Lookout Cave)', status: 'priority', note: 'Night of 24 Aug - August fills fast', url: 'https://desertcave.com.au' },
   { item: "Woomera Traveller's Village", status: 'todo', note: 'Night of 23 Aug - phone', url: 'https://www.facebook.com/eldohotel/' },
-  { item: 'Outback Astronomy Sky Show', status: 'todo', note: 'Festival window · $72pp', url: 'https://outbackastronomy.com.au' },
   { item: 'Return-route accommodation', status: 'todo', note: 'After the vote' },
   { item: "Stefano's Mildura", status: 'todo', note: 'If options 1 or 3 win - book direct' },
   { item: 'Bash App download', status: 'todo', note: 'Before departure - set times live here' },
